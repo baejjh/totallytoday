@@ -1,0 +1,62 @@
+* {
+	font-family: 'Raleway', serif;
+	padding: 0px;
+}
+
+	body {
+		background-image: url("background-courtney-ludeman.png");
+	}
+
+	.blog-post-details {
+		border-left: 5px solid;
+		border-color: #DBEEF7;
+		color: #A0A0A0;
+		padding: 5px;
+		font-style: italic;
+	}
+
+	.quotation {
+		border-left: 5px solid;
+		border-color: #DBEEF7;
+		color: #A0A0A0;
+		padding: 30px;
+		font-style: italic;
+	}
+
+	.extra-padding {
+		padding: 20px;
+	}
+
+#main-div {
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+.sub-div {
+	padding: 25px 30px 30px 30px;
+	margin: 0px auto;
+	background-color: #fff;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-radius: 5px;
+    border-color: #DDDDDD;
+}
+
+	.padding-bottom {
+		padding-bottom: 20px;
+	}
+
+.social-icon {
+	height: 50px;
+}
+
+#footer {
+    position: fixed;
+    height: 30px;
+    bottom: 0;
+    padding: 20px 0px 40px 0px;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #DDDDDD;
+}

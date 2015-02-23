@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>Totally</title>
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+  	<!-- Fonts -->
+  	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	<div class="container text-center col-md-8 col-md-offset-2" id="main-div">
+	<!-- Header Bar -->
+	<ul class="nav nav-tabs">
+	  	<li role="presentation" class="active">
+	  		<a href="/">Home</a>
+	  	</li>
+	  	<li role="presentation">
+	  		<a href="/about">About</a>
+	  	</li>
+	  	<li role="presentation">
+	  		<a href="/journey">Journey</a>
+	  	</li>
+	  	<li role="presentation">
+	  		<a href="/destination">Destination</a>
+	  	</li>
+	</ul><!-- /Header Bar -->
+	
+	<!-- Main Content -->
+	<div class="col-md-12 sub-div">
+		<%= yield %>
+	</div><!-- /Main Content -->
+	</div>
+
+	<!-- /Footer Bar -->
+	<div id="footer" class="col-md-12 col-xs-12 text-center">
+		<a href="/login">Login</a> as the Blogger.
+		Interested in making a blog? Contact the <a href="/about">Blogger</a>.
+	</div><!-- /Footer Bar -->						
+</body>
+</html>
