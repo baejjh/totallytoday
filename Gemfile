@@ -48,3 +48,7 @@ gem 'simple_form'
 
 # enable all platform features for Heroku
 gem 'rails_12factor'
+
+# No Procfile detected, using the default web server (webrick)
+# https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server
+gem 'puma'
