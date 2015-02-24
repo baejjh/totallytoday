@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Declare ruby version (See https://devcenter.heroku.com/articles/ruby-versions)
-ruby '2.0.0'
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
