@@ -3,9 +3,8 @@
 	
 	<% if flash[:register_errors] %>
 	<div class="col-md-12 alert alert-danger" role="alert">
-		<% if flash[:register_errors].each do |error| %>
+		<% flash[:register_errors].each do |error| %>
 				<div><%= error %></div>
-			<% end %>
 		<% end %>
 	</div>
 	<% end %>

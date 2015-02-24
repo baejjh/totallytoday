@@ -1,122 +1,37 @@
 <div class="col-md-12 padding-bottom text-right">
-	Sort by
-	<!-- Category Dropdown Btn -->
-	<div class="btn-group">
-		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-		Category <span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Category Name</a></li>
-			<li><a href="#">Category Name</a></li>
-			<li><a href="#">Category Name</a></li>
-			<li><a href="#">Category Name</a></li>
-		</ul>
-	</div><!-- / Category Dropdown Btn -->
+	Sort by 
+	<% if @category %>
+		<% @category.each do |one_selection| %>
+			<!-- Category Dropdown Btn -->
+			<div class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+				Category <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#"><%= one_selection['name'] %></a></li>
+				</ul>
+			</div><!-- / Category Dropdown Btn -->
+		<% end %>
+	<% else %>
+		none (no categories are available yet to sort)!
+	<% end %>
 </div>
 
-<!-- Blogged Bucket List Items -->
-<div class="col-sm-6 col-md-4">
-	<div class="thumbnail">
-	  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
-	  	<div class="caption">
-	    	<h3>Bucket List Item</h3>
-	    	<div class="blog-post-details">
-	    		<p>Category Name</p>
-		    	<p>mm/dd/yyyy in Seattle</p>
-		    </div>
-	    	<p>Description Cornhole Helvetica next level cred Pitchfork gentrify artisan. Mixtape hella occupy crucifix shabby chic. Butcher Truffaut Pitchfork blog fixie. Shabby chic raw denim street art, tote bag bitters.</p>
-	  	</div>
-	</div>
-</div>
-<div class="col-sm-6 col-md-4">
-	<div class="thumbnail">
-	  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
-	  	<div class="caption">
-	    	<h3>Bucket List Item</h3>
-	    	<div class="blog-post-details">
-	    		<p>Category Name</p>
-		    	<p>mm/dd/yyyy in Seattle</p>
-		    </div>
-	    	<p>Description Cornhole Helvetica next level cred Pitchfork gentrify artisan. Mixtape hella occupy crucifix shabby chic. Butcher Truffaut Pitchfork blog fixie. Shabby chic raw denim street art, tote bag bitters.</p>
-	  	</div>
-	</div>
-</div>
-<div class="col-sm-6 col-md-4">
-	<div class="thumbnail">
-	  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
-	  	<div class="caption">
-	    	<h3>Bucket List Item</h3>
-	    	<div class="blog-post-details">
-	    		<p>Category Name</p>
-		    	<p>mm/dd/yyyy in Seattle</p>
-		    </div>
-	    	<p>Description Cornhole Helvetica next level cred Pitchfork gentrify artisan. Mixtape hella occupy crucifix shabby chic. Butcher Truffaut Pitchfork blog fixie. Shabby chic raw denim street art, tote bag bitters.</p>
-	  	</div>
-	</div>
-</div>
-<div class="col-sm-6 col-md-4">
-	<div class="thumbnail">
-	  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
-	  	<div class="caption">
-	    	<h3>Bucket List Item</h3>
-	    	<div class="blog-post-details">
-	    		<p>Category Name</p>
-		    	<p>mm/dd/yyyy in Seattle</p>
-		    </div>
-	    	<p>Description Cornhole Helvetica next level cred Pitchfork gentrify artisan. Mixtape hella occupy crucifix shabby chic. Butcher Truffaut Pitchfork blog fixie. Shabby chic raw denim street art, tote bag bitters.</p>
-	  	</div>
-	</div>
-</div>
-<div class="col-sm-6 col-md-4">
-	<div class="thumbnail">
-	  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
-	  	<div class="caption">
-	    	<h3>Bucket List Item</h3>
-	    	<div class="blog-post-details">
-	    		<p>Category Name</p>
-		    	<p>mm/dd/yyyy in Seattle</p>
-		    </div>
-	    	<p>Description Cornhole Helvetica next level cred Pitchfork gentrify artisan. Mixtape hella occupy crucifix shabby chic. Butcher Truffaut Pitchfork blog fixie. Shabby chic raw denim street art, tote bag bitters.</p>
-	  	</div>
-	</div>
-</div>
-<div class="col-sm-6 col-md-4">
-	<div class="thumbnail">
-	  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
-	  	<div class="caption">
-	    	<h3>Bucket List Item</h3>
-	    	<div class="blog-post-details">
-	    		<p>Category Name</p>
-		    	<p>mm/dd/yyyy in Seattle</p>
-		    </div>
-	    	<p>Description Cornhole Helvetica next level cred Pitchfork gentrify artisan. Mixtape hella occupy crucifix shabby chic. Butcher Truffaut Pitchfork blog fixie. Shabby chic raw denim street art, tote bag bitters.</p>
-	  	</div>
-	</div>
-</div>
-<div class="col-sm-6 col-md-4">
-	<div class="thumbnail">
-	  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
-	  	<div class="caption">
-	    	<h3>Bucket List Item</h3>
-	    	<div class="blog-post-details">
-	    		<p>Category Name</p>
-		    	<p>mm/dd/yyyy in Seattle</p>
-		    </div>
-	    	<p>Description Cornhole Helvetica next level cred Pitchfork gentrify artisan. Mixtape hella occupy crucifix shabby chic. Butcher Truffaut Pitchfork blog fixie. Shabby chic raw denim street art, tote bag bitters.</p>
-	  	</div>
-	</div>
-</div>
-<div class="col-sm-6 col-md-4">
-	<div class="thumbnail">
-	  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
-	  	<div class="caption">
-	    	<h3>Bucket List Item</h3>
-	    	<div class="blog-post-details">
-	    		<p>Category Name</p>
-		    	<p>mm/dd/yyyy in Seattle</p>
-		    </div>
-	    	<p>Description Cornhole Helvetica next level cred Pitchfork gentrify artisan. Mixtape hella occupy crucifix shabby chic. Butcher Truffaut Pitchfork blog fixie. Shabby chic raw denim street art, tote bag bitters.</p>
-	  	</div>
-	</div>
-</div><!-- / Blogged Bucket List Items -->
- 
+<% if @completed_tallies %>
+	<% @completed_tallies.each do |one_item| %>
+		<!-- Blogged Bucket List Items -->
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+			  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
+			  	<div class="caption">
+			    	<h3><%= one_item['title'] %></h3>
+			    	<div class="blog-post-details">
+			    		<p>< %= one_item['category_id'] %></p>
+				    	<p><%= one_item['date_completed'] %> in <%= one_item['city'] %></p>
+				    </div>
+			    	<p><%= one_item['description'] %></p>
+			  	</div>
+			</div>
+		</div><!-- / Blogged Bucket List Items -->
+	<% end %>
+ <% end %>

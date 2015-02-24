@@ -1,0 +1,23 @@
+<%= link_to('Go Back to All Tallies', new_tally_path) %>
+
+<!-- Title -->
+<h1><%= @one_tally['title'] %></h1>
+
+<!-- Details Table -->
+<table class="table table-striped">
+    <tr>
+        <td class="text-center col-sm-6">Status</td>
+        <td><%= @one_tally['status_id'] %></td>
+    </tr>
+    <tr>
+        <td class="text-center col-sm-2">City Completed In</td>
+        <td><%= @one_tally['city'] %></td>
+    <tr>
+        <td class="text-center col-sm-2">Date Completed</td>
+		<td><%= @one_tally['date_completed'] %></td>
+	</tr>
+</table>
+
+<!-- Blog -->
+<h3>Description</h3>
+	<%= @one_tally['description'] %>

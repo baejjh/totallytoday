@@ -1,59 +1,24 @@
-<div class="col-md-3">
-	<h3>Category Name</h3>
-	<p>Bushwick typewriter chambray. Mumblecore Carles swag, flannel DIY forage gastropub kogi irony biodiesel Odd Future shabby chic banh.</p>
-	<ul class="col-md-offset-3 col-xs-offset-2 text-left">
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-	</ul>
-</div>
+<!-- Yes Category -->
+<% if @category %>
+	<% @category.each do |one_item| %>
+		<div class="col-md-3">
+		
+			<h3><%= one_item['name'] %></h3>
+			<p><%= one_item['description'] %></p>
 
-<div class="col-md-3">
-	<h3>Category Name</h3>
-	<p>Bushwick typewriter chambray. Mumblecore Carles swag, flannel DIY forage gastropub kogi irony biodiesel Odd Future shabby chic banh.</p>
-	<ul class="col-md-offset-3 col-xs-offset-2 text-left">
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-	</ul>
-</div>
+			<!-- Display Tallies in Category -->
+			< % if @one_item['tally'] %>
+				<ul class="col-md-offset-3 col-xs-offset-2 text-left">
+				< % if @one_item['tally'].each do |one_tally| %>
+					<li>< %= one_tally['title'] %></li>
+					< % end %>
+				< % end %>
+				</ul>
+			< % end %><!-- End Tallies in Category -->
 
-<div class="col-md-3">
-	<h3>Category Name</h3>
-	<p>Bushwick typewriter chambray. Mumblecore Carles swag, flannel DIY forage gastropub kogi irony biodiesel Odd Future shabby chic banh.</p>
-	<ul class="col-md-offset-3 col-xs-offset-2 text-left">
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-	</ul>
-</div>
-
-<div class="col-md-3">
-	<h3>Category Name</h3>
-	<p>Bushwick typewriter chambray. Mumblecore Carles swag, flannel DIY forage gastropub kogi irony biodiesel Odd Future shabby chic banh.</p>
-	<ul class="col-md-offset-3 col-xs-offset-2 text-left">
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-		<li>To Tally Individual Items Making It Long</li>
-	</ul>
-</div>
+		</div>
+	<% end %>
+<% else %>
+<!-- No Category -->
+	<p>Sorry! The blogger has no categories to sort the tallies.</p>
+<% end %>

@@ -1,10 +1,11 @@
+<% if @blogger%>
 <div class="col-md-6">
 	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="..." class="img-responsive img-circle">
 </div>
 <div class="col-md-6">
-	<h1>Blogger Name</h1>
-	<p>Blogger Short Description Fashion axe health goth irony, craft beer fingerstache master cleanse meh selvage hashtag. Brooklyn 90's gluten-free church-key Marfa, Bushwick typewriter chambray. Mumblecore Carles swag, flannel DIY forage gastropub kogi irony biodiesel Odd Future shabby chic banh.</p>
-	<div class="quotation">"Helvetica squid dreamcatcher vegan, tousled bicycle rights cliche 8-bit Marfa paleo gentrify +1 blog stumptown cred. Typewriter iPhone XOXO semiotics crucifix."</div>
+	<h1><%= @blogger['first_name']%> <%= @blogger['last_name']%></h1>
+	<p><%= @blogger['short_description']%></p>
+	<div class="quotation">"<%= @blogger['quote']%>"</div>
 	<div class="col-md-12 extra-padding">
 		<!-- LinkedIn -->
 		<a href="https://linkedin.com/in/baejjh">
@@ -36,3 +37,4 @@
 		</a>
 	</div>
 </div>
+<% end %>

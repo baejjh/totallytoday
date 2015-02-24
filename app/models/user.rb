@@ -22,6 +22,7 @@ class User < ActiveRecord::Base
   #before the user gets added to DB, run this function.
   before_save :encrypt_password
 
+  has_many :tallys
 
   #this method encrypts the user's unencrypted login attempt and returns true if the password is a match
   def has_password?(submitted_password)

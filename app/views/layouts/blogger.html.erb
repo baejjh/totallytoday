@@ -19,18 +19,15 @@
 		  		<a href="/dashboard">Dashboard</a>
 		  	</li>
 		  	<li role="presentation" class="inactive">
-		  		<a href="/blog">Blogger</a>
+		  		<%= link_to('Category', new_category_path) %>
 		  	</li>
 		  	<li role="presentation" class="inactive">
-		  		<a href="/category">Category</a>
-		  	</li>
-		  	<li role="presentation" class="inactive">
-		  		<a href="/tally">Tally</a>
+		  		<%= link_to('Tally', new_tally_path) %>
 		  	</li>
 		<!-- /Header Bar -->
 
 		<!-- Main Content -->
-		<div class="col-md-12 sub-div">
+		<div class="col-md-12 col-xs-12 sub-div">
 			<%= yield %>
 		</div><!-- /Main Content -->
 	</div>
