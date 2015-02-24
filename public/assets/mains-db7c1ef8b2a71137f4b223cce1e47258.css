@@ -1,0 +1,89 @@
+/* line 1, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+* {
+  font-family: 'Raleway', serif;
+  padding: 0px;
+}
+
+/* line 6, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.nav li {
+  padding-right: 10px;
+}
+
+/* line 10, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.inactive a {
+  background-color: #EEEEEE;
+  color: #000;
+}
+
+/* line 15, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.inactive a:hover {
+  background-color: #DBEEF7;
+  color: #fff;
+}
+
+/* line 20, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+body {
+  background-image: url("background-courtney-ludeman.png");
+}
+
+/* line 24, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.blog-post-details {
+  border-left: 5px solid;
+  border-color: #DBEEF7;
+  color: #A0A0A0;
+  padding: 5px;
+  font-style: italic;
+}
+
+/* line 32, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.quotation {
+  border-left: 5px solid;
+  border-color: #DBEEF7;
+  color: #A0A0A0;
+  padding: 30px;
+  font-style: italic;
+}
+
+/* line 40, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.extra-padding {
+  padding: 20px;
+}
+
+/* line 44, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+#main-div {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+/* line 49, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.sub-div {
+  padding: 25px 30px 30px 30px;
+  margin: 0px auto;
+  background-color: #fff;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-radius: 5px;
+  border-color: #DDDDDD;
+}
+
+/* line 60, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+/* line 64, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+.social-icon {
+  height: 50px;
+}
+
+/* line 68, /Users/jennybae/Desktop/totallytoday/app/assets/stylesheets/mains.css.scss */
+#footer {
+  position: fixed;
+  height: 30px;
+  bottom: 0;
+  padding: 20px 0px 40px 0px;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #DDDDDD;
+}

@@ -34,4 +34,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # not in config/initializers/assets
+  config.assets.precompile += ['application.css.scss', 'mains.css']
+  config.assets.precompile += ['application.css.scss', 'users.css']
 end

@@ -18,27 +18,7 @@
 		}
 
 	body {
-		background-image: url("background-courtney-ludeman.png");
-	}
-
-	.blog-post-details {
-		border-left: 5px solid;
-		border-color: #DBEEF7;
-		color: #A0A0A0;
-		padding: 5px;
-		font-style: italic;
-	}
-
-	.quotation {
-		border-left: 5px solid;
-		border-color: #DBEEF7;
-		color: #A0A0A0;
-		padding: 30px;
-		font-style: italic;
-	}
-
-	.extra-padding {
-		padding: 20px;
+		background-image: url("background-ornate-floral.jpg");
 	}
 
 #main-div {
@@ -61,8 +41,21 @@
 		padding-bottom: 20px;
 	}
 
-.social-icon {
-	height: 50px;
+	.extra-padding {
+		padding: 20px;
+	}
+
+.btn-user {
+	color: white;
+	background-color: #687E11;
+}
+
+.category-post-details {
+	border-left: 5px solid;
+	border-color: #687E11;
+	color: #A0A0A0;
+	padding: 5px;
+	font-style: italic;
 }
 
 #footer {

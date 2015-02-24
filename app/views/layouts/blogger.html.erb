@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>Totally for the Blogger</title>
+  	<%= stylesheet_link_tag    'users', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+  	<!-- Fonts -->
+  	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="container text-center col-md-8 col-md-offset-2" id="main-div">
+
+	<!-- Header Bar -->
+		<ul class="nav nav-tabs">
+		  	<li role="presentation" class="active">
+		  		<a href="/dashboard">Dashboard</a>
+		  	</li>
+		  	<li role="presentation" class="inactive">
+		  		<a href="/blog">Blogger</a>
+		  	</li>
+		  	<li role="presentation" class="inactive">
+		  		<a href="/category">Category</a>
+		  	</li>
+		  	<li role="presentation" class="inactive">
+		  		<a href="/tally">Tally</a>
+		  	</li>
+		<!-- /Header Bar -->
+
+		<!-- Main Content -->
+		<div class="col-md-12 sub-div">
+			<%= yield %>
+		</div><!-- /Main Content -->
+	</div>
+
+	<!-- /Footer Bar -->
+	<div id="footer" class="col-md-12 col-xs-12 text-center">
+		<%= link_to('Log off', signout_path) %> to continue as a visitor.
+	</div><!-- /Footer Bar -->					
+</body>
+</html>
