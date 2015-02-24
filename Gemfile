@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Declare ruby version (See https://devcenter.heroku.com/articles/ruby-versions)
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
@@ -41,5 +43,8 @@ gem 'spring',        group: :development
 # Use bootstrap
 gem 'bootstrap-sass'
 
-#SIMPLE FORM BABY!
+# SIMPLE FORM BABY!
 gem 'simple_form'
+
+# enable all platform features for Heroku
+gem 'rails_12factor'
