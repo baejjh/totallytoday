@@ -15,16 +15,16 @@
 
 		<!-- Header Bar -->
 		<ul class="nav nav-tabs">
-		  	<li role="presentation" class="active">
+		  	<li role="presentation" class="nav-tab-color <%= 'active' if current_page?(root_path)%>">
 		  		<a href="/">Home</a>
 		  	</li>
-		  	<li role="presentation" class="inactive">
+		  	<li role="presentation" class="nav-tab-color <%= 'active' if current_page?('/about')%>">
 		  		<a href="/about">About</a>
 		  	</li>
-		  	<li role="presentation" class="inactive">
+		  	<li role="presentation" class="nav-tab-color <%= 'active' if current_page?('/journey')%>">
 		  		<a href="/journey">Journey</a>
 		  	</li>
-		  	<li role="presentation" class="inactive">
+		  	<li role="presentation" class="nav-tab-color <%= 'active' if current_page?('destination')%>">
 		  		<a href="/destination">Destination</a>
 		  	</li>
 		</ul><!-- /Header Bar -->

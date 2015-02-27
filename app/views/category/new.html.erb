@@ -35,24 +35,23 @@
 <div class="col-md-12 col-xs-12">
 <h1>All Categories</h1>
 <% if @all_categories %>
-	<%= @all_categories %>
-	< % if @all_categories.each do |one_name| %>
+	<% @all_categories.each do |one_name| %>
 	<div class="col-xs-6 col-md-3">
 		<div class="thumbnail">
 		  	<img src="http://www.webdesignmash.com/trial/wp-content/uploads/2010/07/action-photography15.jpg" alt="...">
 		  	<div class="caption">
-		    	<h3>< %= one_name['name'] %></h3>
-		    	<div class="category-post-details">< %= one_name['description'] %></div>
+		    	<h3><%= one_name['name'] %></h3>
+		    	<div class="category-post-details"><%= one_name['description'] %></div>
 			    <p>
 		    		<p>XX Completed</p>
 			    	<p>XX Ongoing</p>
-			    	<a href="/editcategory/< %= one_name['id'] %>" class="btn btn-user">Edit Category</a>
-			    	<a href="/viewcategory/< %= one_name['id'] %>" class="btn btn-default">View Tallies</a>
+			    	<a href="/editcategory/<%= one_name['id'] %>" class="btn btn-user">Edit Category</a>
+			    	<a href="/viewcategory/<%= one_name['id'] %>" class="btn btn-default">View Tallies</a>
 			    </p>
 		  	</div>
 		</div>
 	</div>
-	< % end %>
+	<% end %>
 <% else %>
 	<p>Currently, you have no categories to group the tallies by.</p>
 <% end %>

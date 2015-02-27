@@ -15,7 +15,7 @@ class CategoryController < ApplicationController
     end
 
   	def show
-  		# @one_category = Category.find( one_category_params )
+  		@one_category = Category.find( one_category_params )
   	end
 
   	def edit
