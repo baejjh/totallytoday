@@ -36,8 +36,9 @@ This was my first time using PostgreSQL; before, I used SQLite3. There were a to
 	Insert Photo
 	- **Solution**: Status, Category, Tally
 Redirecting from view-to-view
-	- Parameter was not stored
-	- **Attempt 1**: Instead of params, store *user_id* in sessions and destroy upon logout but realized that I was already doing that in controllers/helpers/sessions_helpers
+	- Parameter is not stored second time visitng the dashboard
+	- **Attempt**: Instead of params, store *user_id* in sessions and destroy upon logout but realized that I was already doing that in controllers/helpers/sessions_helpers
+	- **Solution**: Use *User.find(session[:user_id])* instead of *User.find(params[:id])*
 Navigation Tabs
 	- Attribute of *class="active"* added
 Private Methods
