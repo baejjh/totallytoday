@@ -10,12 +10,11 @@ class StatusController < ApplicationController
   	end
 
   	private
-    def routing_params
-        params.require(:user).permit(:id)
-    end
+      def routing_params
+          params.require(:user).permit(:id)
+      end
 
-    private
-    def status_params
-        params.require(:status).permit(:type)
-    end
+      def status_params
+          params.require(:status).permit(:type)
+      end
 end

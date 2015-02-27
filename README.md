@@ -3,13 +3,9 @@
 > Bucket List Blog Built with Ruby on Rails & PostgreSQL to encourage a prosperous and eventful living of the blogger
 
 Insert GIF
-
 ======
 
 ### Wireframe
-Insert Photo
-
-### Relational Database
 Insert Photo
 
 ### Functionalities
@@ -18,26 +14,31 @@ User
 - Password Encryption
 - Admin Dashboard
 Bucket List
-- CRUD of Categories, Tallies/Items, Statuses
+- CRUD of Category, Tally (also referred to as *Item*), Status
 - RESTful Architecture
 Error Display
 - Use flash[:variable] for failed DB entries
 
 ### Roadblocks
-1. Layouts
+Layouts
 - Using different CSS file for different layouts
-- **Solution**: config.assets.precompile
-2. This was my first time using PostgreSQL; before, I used SQLite3. There were a ton of difficulties.
+- **Solution**: config.assets.precompile in config/enßvironments/..
+This was my first time using PostgreSQL; before, I used SQLite3. There were a ton of difficulties.
 - Basic PostgreSQL Queries
-	- **Solution**: Don't forget to add semicolons (;)
-		*\h*: Displays a list of SQL commands
+	- **Solution**: Use *\h* to display a list of SQL commands
+	- **Solution**: Don't forget to add semicolons (;) in psql!
 - PostgreSQL in different environments
 	- Migrating from development to Heroku deployment
 - Creating a *Role*
 - Relational DB
 	- 'Which table do I create first?'
-	- **Solution**: Diagrams drawn on paper help
-3. Displaying Data in Front-End
-4. Redirecting from view-to-view
+	- **Solution**: Relational DB Diagrams drawn on paper helped.
+	Insert Photo
+	- **Solution**: Status, Category, Tally
+Redirecting from view-to-view
 	- Parameter was not stored
-	- **Solution**: Instead of params, store user_id in sessions and destroy upon logout
+	- **Attempt 1**: Instead of params, store *user_id* in sessions and destroy upon logout but realized that I was already doing that in controllers/helpers/sessions_helpers
+Navigation Tabs
+	- Attribute of *class="active"* added
+Private Methods
+	- **Solution**: Always display on the bottom

@@ -1,14 +1,4 @@
 class CategoryController < ApplicationController
-	private
-        def category_params
-            params.require(:category).permit(:name, :description, :tally_id, :status_id)
-        end
-        
-  	private
-        def one_category_params
-            params.require(:id)
-        end
-
   	def new
   		@category = Category.new
         @all_categories = Category.all
@@ -36,4 +26,13 @@ class CategoryController < ApplicationController
 
   	def destroy
   	end
+
+    private
+        def category_params
+            params.require(:category).permit(:name, :description, :tally_id, :status_id)
+        end
+
+        def one_category_params
+            params.require(:id)
+        end
 end

@@ -1,15 +1,5 @@
 class TallyController < ApplicationController
-  	private
-        def tally_params
-            params.require(:tally).permit(:title, :description, :city, :status_id)
-        end
-
-    private
-        def one_tally_params
-            params.require(:id)
-        end
-
-    def new
+  	def new
   		@tally = Tally.new
         @display_all_tallies = Tally.all
         @display_all_categories = Category.all #not used yet but want category names to be retrieved
@@ -34,4 +24,13 @@ class TallyController < ApplicationController
 
   	def destroy
   	end
+
+    private
+        def tally_params
+            params.require(:tally).permit(:title, :description, :city, :status_id)
+        end
+        
+        def one_tally_params
+            params.require(:id)
+        end
 end
